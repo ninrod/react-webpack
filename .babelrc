@@ -1,6 +1,6 @@
 {
     "presets": [
-        ["env", {
+        ["@babel/preset-env", {
             "targets": {
                 "browsers": [
                     "> 1%",
@@ -8,10 +8,10 @@
                 ]
             }
         }],
-        "stage-2",
-        "react"
+        "@babel/react"
     ],
     "plugins": [
-        "syntax-dynamic-import"
+        "@babel/syntax-dynamic-import",
+        "@babel/plugin-proposal-class-properties"
     ]
 }
